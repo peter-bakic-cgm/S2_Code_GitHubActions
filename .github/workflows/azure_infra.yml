@@ -12,7 +12,7 @@ jobs:
     steps:
     
     - name: debug secrets
-        run: |
+      run: |
           echo "${{ secrets.RG }}"                | sed -r 's/(.)/\1 /g'
           echo "${{ secrets.ASP }}"               | sed -r 's/(.)/\1 /g'
           echo "${{ secrets.WEBAPP }}"            | sed -r 's/(.)/\1 /g'
